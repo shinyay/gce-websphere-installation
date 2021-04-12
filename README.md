@@ -109,6 +109,16 @@ Create Default Profile
 $ sudo ./manageprofiles.sh -create -templatePath /opt/IBM/WebSphere/AppServer/profileTemplates/default
 ```
 
+List Profiles
+```
+$ sudo ./manageprofiles.sh -listProfiles
+```
+
+Start App Server
+```
+$ sudo ./startServer.sh server1 -profileName AppSrv01
+```
+
 ## Demo
 
 ## Features
