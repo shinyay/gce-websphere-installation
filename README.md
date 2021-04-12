@@ -62,6 +62,11 @@ Install **IBM Installation Manager** as Non-Root user `userinstc`
 $ sudo ./userinstc -acceptLicense -showProgress
 ```
 
+Verify IIM Installation
+```
+$ sudo /opt/IBM/InstallationManager/eclipse/tools/imcl listInstalledPackages
+```
+
 Change Directry to **IBM Installation Manager**
 ```
 $ cd /opt/IBM/InstallationManager/eclipse/tools
