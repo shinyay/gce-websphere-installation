@@ -54,6 +54,13 @@ Install **IBM Installation Manager**
 $ sudo ./installc -acceptLicense
 ```
 
+Change Directry to **IBM Installation Manager**
+```
+$ cd /opt/IBM/InstallationManager/eclipse/tools
+```
+
+
+
 ## Demo
 
 ## Features
