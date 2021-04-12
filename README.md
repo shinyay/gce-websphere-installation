@@ -1,6 +1,6 @@
-# Name
+# WebSphere Application Server Installation on GCE
 
-Overview
+WAS on GCE for Ubunts installation notes
 
 ## Description
 
