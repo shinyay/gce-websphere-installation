@@ -49,6 +49,11 @@ Download **IBM Installation Manager**
 - [IBM Installation Manager](https://www.ibm.com/support/fixcentral/swg/selectFixes?parent=ibm%7ERational&product=ibm/Rational/IBM+Installation+Manager&release=All&platform=Linux&function=all)
   - 1.9.1.5-IBMIM-LINUX-X86_64-20210309_1755 
 
+Install **IBM Installation Manager**
+```
+$ sudo ./installc -acceptLicense
+```
+
 ## Demo
 
 ## Features
