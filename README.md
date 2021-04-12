@@ -104,6 +104,11 @@ Verify WAS Installation
 $ /opt/IBM/WebSphere/AppServer/bin/versionInfo.sh
 ```
 
+Create Default Profile
+```
+$ sudo ./manageprofiles.sh -create -templatePath /opt/IBM/WebSphere/AppServer/profileTemplates/default
+```
+
 ## Demo
 
 ## Features
