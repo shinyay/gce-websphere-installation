@@ -3,6 +3,26 @@
 WAS on GCE for Ubunts installation notes
 
 ## Description
+### Ubuntu Setup on GCE
+```
+gcloud beta compute instances create my-instance \
+  --zone us-central1-a \
+  --machine-type e2-medium \
+  --scopes cloud-platform \
+  --tags http-server \
+  --image=ubuntu-2004-focal-v20210325 \
+  --image-project=ubuntu-os-cloud \
+  --boot-disk-size=10GB
+
+gcloud compute firewall-rules create default-allow-http \
+  --direction=INGRESS \
+  --priority=1000 \
+  --network=default \
+  --action=ALLOW \
+  --rules=tcp:80 \
+  --source-ranges=0.0.0.0/0 \
+  --target-tags=http-server
+```
 
 ## Demo
 
