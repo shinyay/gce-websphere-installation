@@ -32,6 +32,15 @@ gcloud compute firewall-rules create default-allow-ssh \
   --rules=tcp:22 \
   --source-ranges=0.0.0.0/0 \
   --target-tags=http-server
+
+gcloud compute firewall-rules create default-allow-was-admin \
+  --direction=INGRESS \
+  --priority=1000 \
+  --network=default \
+  --action=ALLOW \
+  --rules=tcp:9060 \
+  --source-ranges=0.0.0.0/0 \
+  --target-tags=http-server
 ```
 
 Connect to Instance
