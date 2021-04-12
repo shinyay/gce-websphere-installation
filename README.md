@@ -59,7 +59,21 @@ Change Directry to **IBM Installation Manager**
 $ cd /opt/IBM/InstallationManager/eclipse/tools
 ```
 
+Create Credential File
+```
+$ sudo ./imutilsc saveCredential \
+    -secureStorageFile cred.file \
+    -userName USER_ID \
+    -userPassword USER_PASSWORD \
+    -url http://www.ibm.com/software/repositorymanager/V9WASBase
+```
 
+List Offering Package List
+```
+$ sudo ./imcl listAvailablePackages \
+    -repositories http://www.ibm.com/software/repositorymanager/V9WASBase \
+    -secureStorageFile cred.file
+```
 
 ## Demo
 
