@@ -41,6 +41,15 @@ gcloud compute firewall-rules create default-allow-was-admin \
   --rules=tcp:9060 \
   --source-ranges=0.0.0.0/0 \
   --target-tags=http-server
+
+gcloud compute firewall-rules create default-allow-was-host \
+  --direction=INGRESS \
+  --priority=1000 \
+  --network=default \
+  --action=ALLOW \
+  --rules=tcp:9080 \
+  --source-ranges=0.0.0.0/0 \
+  --target-tags=http-server
 ```
 
 Connect to Instance
@@ -155,7 +164,13 @@ Access to Admin Console (UserID: anything)
 
 ## References
 - [WebSphere Application Server traditional (Distributed and IBM i), Version 9.0](https://www.ibm.com/docs/ja/was/9.0.5?topic=websphere-application-server-distributed-i-version-90)
-## Licence
+
+- WAS ND v9 Traditional をコマンドラインで入れてみた
+  - [1](https://qiita.com/shimauma_Zzzzz/items/5b6a90e908778082b08e)
+  - [2](https://qiita.com/shimauma_Zzzzz/items/613366e228b55a4d0faf)
+  - [3](https://qiita.com/shimauma_Zzzzz/items/210cc977c46860835f86)
+- [WAS App Sample](https://www.ibm.com/docs/en/was-nd/8.5.5?topic=websphere-application-server-version-855-samples)
+
 
 Released under the [MIT license](https://gist.githubusercontent.com/shinyay/56e54ee4c0e22db8211e05e70a63247e/raw/34c6fdd50d54aa8e23560c296424aeb61599aa71/LICENSE)
 
