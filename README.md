@@ -154,7 +154,7 @@ Access to Admin Console (UserID: anything)
 ## Installation
 
 ## References
-
+- [WebSphere Application Server traditional (Distributed and IBM i), Version 9.0](https://www.ibm.com/docs/ja/was/9.0.5?topic=websphere-application-server-distributed-i-version-90)
 ## Licence
 
 Released under the [MIT license](https://gist.githubusercontent.com/shinyay/56e54ee4c0e22db8211e05e70a63247e/raw/34c6fdd50d54aa8e23560c296424aeb61599aa71/LICENSE)
