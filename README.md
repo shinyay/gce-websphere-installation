@@ -90,7 +90,7 @@ $ sudo ./imcl listAvailablePackages \
 
 Install WebSphere Application Server
 ```
-$ sudo ./imcl install com.ibm.websphere.APPCLIENT.v90_9.0.5006.20201109_1605 com.ibm.java.jdk.v8 \
+$ sudo ./imcl install com.ibm.websphere.BASE.v90_9.0.5006.20201109_1605 com.ibm.java.jdk.v8 \
     -repositories http://www.ibm.com/software/repositorymanager/V9WASBase \
     -installationDirectory /opt/IBM/WebSphere/AppServer \
     -sharedResourcesDirectory /opt/IBM/IMShared \
