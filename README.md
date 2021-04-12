@@ -39,6 +39,11 @@ Connect to Instance
 $ gcloud beta compute ssh my-instance --zone us-central1-a --project (gcloud config get-value project)
 ```
 
+### Prepare Ubuntu for WebSpere Application Server
+```
+$ sudo apt-get install libxtst6 libgtk2.0-bin libxft2
+```
+
 ## Demo
 
 ## Features
