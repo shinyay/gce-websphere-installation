@@ -75,6 +75,17 @@ $ sudo ./imcl listAvailablePackages \
     -secureStorageFile cred.file
 ```
 
+Install WebSphere Application Server
+```
+$ sudo ./imcl install com.ibm.websphere.APPCLIENT.v90_9.0.5006.20201109_1605 com.ibm.java.jdk.v8 \
+    -repositories http://www.ibm.com/software/repositorymanager/V9WASBase \
+    -installationDirectory /opt/IBM/WebSphere/AppServer \
+    -sharedResourcesDirectory /opt/IBM/IMShared \
+    -showProgress \
+    -secureStorageFile cred.file \
+    -acceptLicense
+```
+
 ## Demo
 
 ## Features
