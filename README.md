@@ -4,6 +4,7 @@ WAS on GCE for Ubunts installation notes
 
 ## Description
 ### Ubuntu Setup on GCE
+Create Ubuntus Instance
 ```
 gcloud beta compute instances create my-instance \
   --zone us-central1-a \
@@ -22,6 +23,20 @@ gcloud compute firewall-rules create default-allow-http \
   --rules=tcp:80 \
   --source-ranges=0.0.0.0/0 \
   --target-tags=http-server
+
+gcloud compute firewall-rules create default-allow-ssh \
+  --direction=INGRESS \
+  --priority=1000 \
+  --network=default \
+  --action=ALLOW \
+  --rules=tcp:22 \
+  --source-ranges=0.0.0.0/0 \
+  --target-tags=http-server
+```
+
+Connect to Instance
+```
+$ gcloud beta compute ssh my-instance --zone us-central1-a --project (gcloud config get-value project)
 ```
 
 ## Demo
