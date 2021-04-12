@@ -133,8 +133,12 @@ Confirm Server Port
 $ grep WC /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/portdef.props
 ```
 
+Access to Admin Console (UserID: anything)
+
 - WC_adminhost=9060: `http://<HOSTNAME> or <IP-ADDRESS>:9060/ibm/console/`
 - WC_adminhost_secure=9043: `https://<HOSTNAME> or <IP-ADDRESS>:9060/ibm/console/`
+
+
 
 ## Demo
 
