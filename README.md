@@ -134,7 +134,7 @@ $ grep WC /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/properties/portdef.prop
 ```
 
 Access to Admin Console (UserID: anything)
-
+![admin-console](https://user-images.githubusercontent.com/3072734/114355053-fd840c80-9ba9-11eb-9e4f-d65699e89b16.png)
 - WC_adminhost=9060: `http://<HOSTNAME> or <IP-ADDRESS>:9060/ibm/console/`
 - WC_adminhost_secure=9043: `https://<HOSTNAME> or <IP-ADDRESS>:9060/ibm/console/`
 
