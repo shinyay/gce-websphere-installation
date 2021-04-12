@@ -51,7 +51,7 @@ Download **IBM Installation Manager**
 
 Install **IBM Installation Manager**
 ```
-$ sudo ./installc -acceptLicense
+$ sudo ./installc -acceptLicense -showProgress
 ```
 
 Change Directry to **IBM Installation Manager**
