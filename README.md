@@ -86,6 +86,11 @@ $ sudo ./imcl install com.ibm.websphere.APPCLIENT.v90_9.0.5006.20201109_1605 com
     -acceptLicense
 ```
 
+Verify WAS Installation
+```
+$ /opt/IBM/WebSphere/AppServer/bin/versionInfo.sh
+```
+
 ## Demo
 
 ## Features
