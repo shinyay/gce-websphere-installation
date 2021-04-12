@@ -147,7 +147,17 @@ Access to Admin Console (UserID: anything)
 - WC_adminhost=9060: `http://<HOSTNAME> or <IP-ADDRESS>:9060/ibm/console/`
 - WC_adminhost_secure=9043: `https://<HOSTNAME> or <IP-ADDRESS>:9060/ibm/console/`
 
+Deploy Sample App
+```
+$ wget http://public.dhe.ibm.com/software/websphere/appserv/library/v85/samples/JaxWSServicesSamples-8_5.zip
+$ unzip JaxWSServicesSamples-8_5.zip
+$ sudo mkdir /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/apps
+$ sudo mv JaxWSServicesSamples-8.5/installableApps/JaxWSServicesSamples.ear /opt/IBM/WebSphere/AppServer/profiles/AppSrv01/apps
+```
 
+Install on the Admin Console with default settigs
+
+- `http://<IP-ADDRESS>:9080/wssamplesei/demo`
 
 ## Demo
 
